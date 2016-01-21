@@ -11,6 +11,7 @@ def baidu_tieba(url, begin_page, end_page):
         f.write(m)
         f.close()
 
+#設置頁數和網址
 bdurl = 'http://tieba.baidu.com/p/4312289766?pn='
 #begin_page = int(raw_input(u"輸入開始頁數：\n"))
 #end_page = int(raw_input(u"輸入終點頁數：\n"))

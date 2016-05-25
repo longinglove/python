@@ -9,8 +9,11 @@ ls = os.linesep
 
 fname = raw_input('Enter filename: ')
 
-if os.path.exists(fname):
-    print "ERROR: '%s' already exists" % fname
+while True:
+    if os.path.exists(fname):
+        print "ERROR: '%s' already exists" % fname
+    else:
+        break
 
 all = []
 print "\nEnter lines ('.' by itself to quit).\n"
